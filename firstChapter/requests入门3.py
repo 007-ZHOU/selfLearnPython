@@ -1,3 +1,4 @@
+#针对在ajax中获取的数据
 import requests
 
 url=r'https://movie.douban.com/j/chart/top_list'
@@ -15,7 +16,7 @@ param={
     'limit': 20,
 }
 
-resp=requests.get(url=url,params=param,headers=headers)#被反扒，首选user-agent
+resp=requests.get(url=url,params=param,headers=headers)#被反扒，首选user-agent,get用params,post用data
 
 print(resp.request.url)
 print(resp.json())

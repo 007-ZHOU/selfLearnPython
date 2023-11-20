@@ -1,5 +1,5 @@
 import requests
-url='https://fanyi.baidu.com/sug'
+url='https://fanyi.baidu.com/sug'#Request URL:   https://fanyi.baidu.com/sug
 
 s=input("请输入您要翻译的英文")
 formData={

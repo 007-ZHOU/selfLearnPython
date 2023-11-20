@@ -44,6 +44,4 @@ with open(file='手刃豆瓣TOP250.csv',mode='w') as f:
         print(dic)
         csvWriter.writerow(dic.values())
 
-
-f.close()    
 print('over')
