@@ -1,15 +1,17 @@
 1.创建项目
-    scrapy startproject 项目名称
+    scrapy startproject 项目名称(tupianzhijia)
 
 2.进入项目
     cd 项目名称
 3.创建爬虫
-    scrapy genspider 名字 域名
+    scrapy genspider 名字meinv（这个名字就是 tupianzhijia\tupianzhijia\spiders\meinv） 域名(baidu.com)
 
+    3.1修改报错等级
+    settings文件 LOG_LEVEL='WARNING'
 4. 可能需要修改start_urls，修改成你要抓取的拉个页面
 
 5.运行scrapy 
-    scrapy crawl 项目名称
+    scrapy crawl 名字meinv
 
 5.对数据解析解析 ，在spider里面的parse（response）方法中进行解析
 
@@ -36,3 +38,6 @@
 
 7.设置  settings.py 文件将pipeline 进行生效设置
 ITEM_PIPELINES开启
+
+8.设置  settings.py 文件将middlewares 进行生效设置
+SPIDER_MIDDLEWARES 或是 DOWNLOADER_MIDDLEWARES  开启

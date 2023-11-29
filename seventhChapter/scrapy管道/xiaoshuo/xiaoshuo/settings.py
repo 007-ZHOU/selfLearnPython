@@ -1,4 +1,4 @@
-# Scrapy settings for caipiao project
+# Scrapy settings for xiaoshuo project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,25 +7,15 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "caipiao"
+BOT_NAME = "xiaoshuo"
 
-SPIDER_MODULES = ["caipiao.spiders"]
-NEWSPIDER_MODULE = "caipiao.spiders"
+SPIDER_MODULES = ["xiaoshuo.spiders"]
+NEWSPIDER_MODULE = "xiaoshuo.spiders"
 
-LOG_LEVEL="WARNING"
-
-#配置mysql
-MSQL={
-   'host':'127.0.0.1',
-   'port':3306,
-   'user':'root',
-   'password':'qwe123',
-   'database':'spider'
-
-}
+LOG_LEVEL='WARNING'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "caipiao (+http://www.yourdomain.com)"
+#USER_AGENT = "xiaoshuo (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -56,14 +46,14 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "caipiao.middlewares.CaipiaoSpiderMiddleware": 543,
+#    "xiaoshuo.middlewares.XiaoshuoSpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
-#    "caipiao.middlewares.CaipiaoDownloaderMiddleware": 543,
-#}
+DOWNLOADER_MIDDLEWARES = {
+   "xiaoshuo.middlewares.XiaoshuoDownloaderMiddleware": 543,
+}
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
@@ -73,10 +63,9 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {
-   "caipiao.pipelines.CaipiaoPipeline": 300,
-   "caipiao.pipelines.CaiPiaoMySQLPipeline": 301,
-}
+#ITEM_PIPELINES = {
+#    "xiaoshuo.pipelines.XiaoshuoPipeline": 300,
+#}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
