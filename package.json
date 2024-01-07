@@ -1,0 +1,25 @@
+{
+  "name": "selflearnpython",
+  "version": "1.0.0",
+  "description": "这是自己学习python",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/007-ZHOU/selfLearnPython.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/007-ZHOU/selfLearnPython/issues"
+  },
+  "homepage": "https://github.com/007-ZHOU/selfLearnPython#readme",
+  "dependencies": {
+    "crypto-js": "^4.2.0"
+  }
+}

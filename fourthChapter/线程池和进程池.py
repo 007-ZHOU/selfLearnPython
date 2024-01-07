@@ -4,8 +4,12 @@ from concurrent.futures import ThreadPoolExecutor,ProcessPoolExecutor
 
 #任务
 def fn(name):
-    for i in range(1000):
-        print(name,i)
+    print(f'{name} is running')
+    return name
+
+#任务调度
+def main():
+    print('main is running')
 
 
 if __name__ == '__main__':

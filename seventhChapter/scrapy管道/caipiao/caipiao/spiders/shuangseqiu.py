@@ -3,9 +3,6 @@ from caipiao.items import CaiPiaoItem#内部包
 
 
 class ShuangseqiuSpider(scrapy.Spider):
-    name = "shuangseqiu"
-    allowed_domains = ["500.com"]
-    start_urls = ["https://datachart.500.com/ssq/"]
 
     def parse(self, response,**kwargs):
         # print(resp.text)
